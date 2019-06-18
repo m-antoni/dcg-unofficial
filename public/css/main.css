@@ -1,5 +1,6 @@
 /*
-b6d331
+  #b6d331
+  #ff5964
 */
 
 /* Create a sticky/fixed navbar */
@@ -10,7 +11,7 @@ header{
 #navbar {
   overflow: hidden;
   background-color: #f1f1f1;
-  padding: 20px 10px; /* Large padding which will shrink on scroll (using JS) */
+  padding: 10px; /* Large padding which will shrink on scroll (using JS) */
   transition: 0.4s; /* Adds a transition effect when the padding is decreased */
   position: fixed; /* Sticky/fixed navbar */
   width: 100%;
@@ -21,33 +22,36 @@ header{
 
 /* Style the navbar links */
 #navbar a {
+  font-family: 'Poppins', sans-serif;
   float: left;
   color: black;
   text-align: center;
-  padding: 12px;
+/*  padding: 10px;*/
   text-decoration: none;
-  font-size: 18px; 
-  line-height: 25px;
-  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600; 
+/*  line-height: 25px;*/
 }
 
 /* Style the logo */
+#navbar .navbar-brand img{
+  width: 50px;
+}
+
 #navbar #logo {
-  font-size: 25px;
+  font-size: 1.4rem;
   font-weight: bold;
+  color: #909090;
   transition: 0.4s;
 }
 
+#navbar a{
+  font-size: .9rem;
+}
 /* Links on mouse-over */
 #navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Style the active/current link */
-#navbar a.active {
-  background-color: dodgerblue;
-  color: white;
+  color: grey;
+  font-weight: 600;
 }
 
 /* Display some links to the right */
@@ -70,23 +74,146 @@ header{
   }
 }
 
-/* Carousel*/
-/*#carouselHomepage{
-    height: 500px;
-}*/
-
-
-/*
-  google map
-*/
-#map{
-  width: 100%;
+/* VIDEO BACKGROUND ON LANDING PAGE */
+/* GLOBAL SETTING */
+*{
+    box-sizing: border-box;
 }
 
-/*
-  back to top styles
-*/
+/* INDEX PAGE STYLES */
+body{
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  overflow-x: hidden;
+}
+.v-header{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.video-container{
+  max-width: 960px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  text-align: center;
+}
 
+.fullscreen-video-wrap{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.fullscreen-video-wrap video{
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.header-overlay{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(37, 45, 53,0.5);
+  z-index: 1;
+ /* opacity: 0.65;*/
+}
+
+.header-content{
+  z-index: 2;
+}
+
+.header-content h1{
+  padding-top: 200px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 4.6rem;
+  margin-bottom: 0;
+  padding-bottom: .4rem;
+}
+
+.header-content p{
+  font-size: 1.5rem;
+  display: block;
+  padding-bottom: 5px;
+}
+
+@media(max-width: 960px){
+    .video-container{
+      padding-right: 3rem;
+      padding-left: 3rem;
+    }
+}
+
+
+/*
+  ABOUT US
+*/
+#about .text-justify{
+  font-size: 1.2rem;
+  color: #909090;
+}
+
+#about h4{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  color: #ff5964;
+  font-weight: 600;
+}
+
+#about .image1{
+    width: 100px;
+    text-align: center;
+}
+
+/* CLIENT SECTION */
+#our_clients{
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+#our_clients h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+}
+
+#our_clients p{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  color: #909090;
+  text-align: center;
+}
+
+
+/* CONTACT SECTION */
+#contact{
+  background: url('/img/contact.jpg') no-repeat center;
+  background-size: cover;
+  padding: 30px 0 70px 0;
+  color: #ffff;
+  border-top: 3px solid #b6d331;
+  border-bottom: 3px solid #b6d331;
+}
+
+#contact h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  color: #b6d331;
+  margin-bottom: 10px;
+}
+
+#contact .form-control{
+  border: 2px solid #909090;
+}
+
+/*back to top styles*/
 .cd-top {
   display: inline-block;
   height: 40px;

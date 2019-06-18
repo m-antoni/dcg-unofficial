@@ -1,8 +1,10 @@
 <header>
-   <nav id="navbar" class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+   <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
    		<div class="container-fluid">
-   				<a class="navbar-brand animated slideInDown delay-5" href="#">Logo Here!</a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+	   				<a id="logo" class="navbar-brand" href="/">
+	   					<img id="logoImage" src="{{ asset('img/logo.png') }}" alt="logo">DC Group of Companies
+	   				</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler">
 				    <span class="navbar-toggler-icon"></span>
 				  </button>
 				  <div class="collapse navbar-collapse" id="navbarToggler">
@@ -11,19 +13,19 @@
 					      		<a class="nav-link" href="#">Home</a>
 						      </li>
 						      <li class="nav-item">
-						       		<a class="nav-link" href="#">About</a>
+						       		<a class="nav-link" href="#about">About</a>
 						      </li>
 						       <li class="nav-item">
-						       		<a class="nav-link" href="#">Corporate Holdings</a>
+						       		<a class="nav-link" href="#corporate">Corporate Holdings</a>
 						      </li>
 						      <li class="nav-item">
-											<a class="nav-link" href="#">Clients</a>	
+											<a class="nav-link" href="#our_clients">Clients</a>	
 						      </li>
 						      <li class="nav-item">
-											<a class="nav-link" href="#">Feed</a>	
+											<a class="nav-link" href="#feed">Feed</a>	
 									</li>
 									<li class="nav-item">
-											<a class="nav-link" href="#">Contact</a>	
+											<a class="nav-link" href="#contact">Contact</a>	
 									</li>
 				    	</ul>
 				  </div>	

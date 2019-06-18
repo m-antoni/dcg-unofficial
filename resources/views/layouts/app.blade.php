@@ -13,10 +13,17 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
     
-    <!-- Styles -->
+    <!-- app.css -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <!-- poppins font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200&display=swap" rel="stylesheet">
+     <!-- libraries -->
     <link href="{{ asset('/css/font-awesome.min.css') }}" rel="stylesheet">
     <link href="{{ asset('/css/animate.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('/css/bttn.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('/css/iziModal.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('/css/owl.carousel.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('/css/owl.theme.default.css') }}" rel="stylesheet">
     <link href="{{ asset('/css/main.css') }}" rel="stylesheet">
 </head>
 <body>
@@ -28,11 +35,16 @@
      <!--  backtotop   -->
       <a href="#0" class="cd-top js-cd-top">Top</a>
 
-  </div><!-- app -->    
-<!-- Scripts -->
-<script src="{{ asset('/js/app.js') }}"></script>
-<script src="{{ asset('/js/backtotop.js') }}"></script>
-<!-- <script src="{{ asset('/js/jquery-3.2.1.min.js') }}"></script> -->
+  </div><!-- app -->   
+
+  <!-- Scripts -->
+  <script src="{{ asset('/js/app.js') }}"></script>
+  <script src="{{ asset('/js/wow.min.js') }}"></script>
+  <script src="{{ asset('/js/owl.carousel.min.js') }}"></script>
+  <script src="{{ asset('/js/iziModal.min.js') }}"></script>
+  <script src="{{ asset('/js/navbar-fixed.js') }}"></script>
+  <script src="{{ asset('/js/backtotop.js') }}"></script>
+
 <script>
   $( document ).ready(function() {
       console.log( "ready!" );
@@ -42,24 +54,58 @@
 
     function scrollFunction() {
       if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        document.getElementById("navbar").style.padding = "10px 10px";
-        // document.getElementById("logo").style.fontSize = "25px";
+        // style when scroll down
+        document.getElementById("navbar").style.padding = "3px 3px";
+        document.getElementById("logo").style.fontSize = "1rem";
+         document.getElementById("logoImage").style.width = "45px";
       } else {
-        document.getElementById("navbar").style.padding = "20px 10px";
-        // document.getElementById("logo").style.fontSize = "25px";
+        // default style
+        document.getElementById("navbar").style.padding = "10px 10px";
+        document.getElementById("logo").style.fontSize = "1.4rem";
+        document.getElementById("logoImage").style.width = "50px";
       }
     }  
 
     // Carousel at homepage
     $('.carousel').carousel({
-      interval: 2000
+      interval: 2000,
+      height: '20%'
     });
 
-    // AOS
-    // AOS.init({
-    //   duration: 2000
-    // });
+    // iziModal script
+    $("#triggerHome").iziModal();
+    $(document).on('click', '.triggerHome', function (event) {
+          event.preventDefault();
+          $('#triggerHome').iziModal('open');
+          //$('#gallery-01').iziModal('setZindex', 99999);
+          //$('#gallery-01').iziModal('open', { zindex: 99999 });
+          $('#triggerHome').iziModal('setWidth', 800);
+          $('#triggerHome').iziModal('setHeaderColor', '#ff5964');
+          //$('#gallery-01').iziModal('setBackground', 'dimgrey');
+    });
 
+ 
+    // OWL.CAROUSEL
+    $('.owl-carousel').owlCarousel({
+      items: 5,
+      loop: true,
+      autoplay: true,
+      autoplayTimeout: 1000,
+      autoplayHoverPause: true,
+      responsiveClass: true,
+    });
+
+    // additional if need buttons
+    // $('.play').on('click',function(){
+    //     owl.trigger('play.owl.autoplay',[1000])
+    // })
+    // $('.stop').on('click',function(){
+    //     owl.trigger('stop.owl.autoplay')
+    // })
+
+
+    // WOW 
+    new WOW().init();
   });
 </script>
 </body>
