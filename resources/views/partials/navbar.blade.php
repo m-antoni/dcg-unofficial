@@ -25,6 +25,9 @@
 											<a class="nav-link" href="#feed">Feed</a>	
 									</li>
 									<li class="nav-item">
+											<a class="nav-link payment" href="#">Payment</a>	
+									</li>
+									<li class="nav-item">
 											<a class="nav-link" href="#contact">Contact</a>	
 									</li>
 				    	</ul>

@@ -1,6 +1,7 @@
 /*
   #b6d331
   #ff5964
+  #37474F
 */
 
 /* Create a sticky/fixed navbar */
@@ -103,6 +104,8 @@ body{
 }
 
 .fullscreen-video-wrap{
+  background: url('../img/buildings.jpg') no-repeat;
+  background-size: cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -121,7 +124,7 @@ body{
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(37, 45, 53,0.5);
+  background: rgba(37, 45, 53,0.6);
   z-index: 1;
  /* opacity: 0.65;*/
 }
@@ -136,10 +139,12 @@ body{
   font-size: 4.6rem;
   margin-bottom: 0;
   padding-bottom: .4rem;
+  font-weight: 600;
 }
 
 .header-content p{
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  color: #b6d331;
   display: block;
   padding-bottom: 5px;
 }
@@ -151,10 +156,11 @@ body{
     }
 }
 
+/* ABOUT US */
+#about{
+  margin-bottom: 100px;
+}
 
-/*
-  ABOUT US
-*/
 #about .text-justify{
   font-size: 1.2rem;
   color: #909090;
@@ -172,10 +178,71 @@ body{
     text-align: center;
 }
 
+/*  QUOTE */
+#quote{
+  background-color: #333;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+#quote p{
+  font-size: 1.8rem;
+}
+#quote b{
+  color: #b6d331;
+}
+#quote cite{
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+
+/* CORPORATE SECTION */
+#corporate{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  /*background-color: #2E8171;*/
+  background-color: #227363;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+.corporateTitle{
+  margin-bottom: 20px;
+}
+
+.corporateTitle h1{
+  font-size: 2.3rem;
+  color: #b6d331;
+}
+
+.corporateTitle p{
+  font-size: 1.8rem;
+  /*color: #909090;*/
+  color: #ffff;
+}
+
+ #corporate h4{
+    font-size: 1.3rem;
+ }
+
+/* BENEFICIARY SECTION */
+#beneficiary{
+  margin-bottom: 200px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+#beneficiary h1{
+  margin-bottom: 20px;
+}
+
+
 /* CLIENT SECTION */
 #our_clients{
-  margin-top: 200px;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
 }
 
 #our_clients h1{
@@ -276,30 +343,34 @@ body{
 
 /* Footer */
 #footer {
-  background-color: #b6d331;
+  background-color: #37474F;
   color: rgba(255, 255, 255, 0.5);
   padding: 8rem 0 6rem 0 ; }
   #footer a {
     color: #ce1b28; }
   #footer strong, #footer b {
     color: #ffffff; }
-  #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
-    color: #ffffff; }
+  #footer h4{
+    color: #b6d331;
+  }
+  #footer h2{
+    font-size: 1.2rem;
+  }
   #footer ul.alt li {
     border-top-color: rgba(255, 255, 255, 0.25); }
   #footer a {
     color: rgba(255, 255, 255, 0.5);
     text-decoration: none; }
     #footer a:hover {
-      color: grey; }
+      color: #b6d331; }
   #footer .content {
     display: -moz-flex;
     display: -webkit-flex;
     display: -ms-flex;
     display: flex; }
     #footer .content section {
-      color: #333;
-      width: 25%; }
+      color: #ffff;
+      width: 25%;}
       #footer .content section:first-child {
         width: 50%;
         padding-right: 4rem; }
