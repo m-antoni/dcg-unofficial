@@ -172,7 +172,8 @@
 		</div>
 </div>
 
- <!--================ BENEFICIARY ORGANIZATION=================-->
+
+<!--================ BENEFICIARY ORGANIZATION =================-->
 
 <div id="beneficiary">
 	<div class="container">
@@ -184,6 +185,7 @@
 		</div>
 	</div>
 </div>
+
 
  <!--================ CLIENTS =================-->
 
@@ -200,6 +202,23 @@
 </div>
 
 
+<!--================ FEED =================-->
+
+<div class="feed">
+		<div class="container">
+				<h1>Where New Ideas Come From - by Jay Shetty</h1>
+				<div id="videoembed">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/Bs7R7FX4aYw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>		
+		</div>
+</div>
+
+
+
+
+
+
+
 <!--================ CONTACT US =================-->
 
 <div id="contact">
@@ -207,18 +226,21 @@
 					<div class="row">
 						<div class="col-md-5">
 								<h1 class="wow fadeInRight" data-wow-delay="1s">Contact Us</h1>
-								<form class="wow bounce"> 
-								  <div class="form-group">
-								    <label for="exampleInputEmail1"><h4>Name:</h4></label>
-								    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your name">
+								<form action="{{ route('send') }}" method="POST" class="wow bounce"> 
+									{{-- csrf --}}
+									@csrf
+									<div class="form-group">
+								    <label><h4>Name:</h4></label>
+								    <input type="text" class="form-control" placeholder="enter your name" name="name">
 								  </div>
 								  <div class="form-group">
-								    <label for="emailForm"><h4>Email</h4></label>
-								    <input type="password" class="form-control" id="emailForm" placeholder="enter your email">
+								    <label><h4>Email:</h4></label>
+								    <input type="email" class="form-control" name="email" placeholder="enter your email">
 								  </div>
 								  <div class="form-group">
-								    <label for="textareaForm"><h4>Message:</h4></label>
-								    <textarea class="form-control" id="textareaForm" rows="4" placeholder="Message here..."></textarea>
+								    <label><h4>Message:</h4></label>
+								    <textarea class="form-control" rows="4" name="message" placeholder="enter your message">
+								    </textarea>
 								  </div>
 								  <button type="submit" class="bttn-fill bttn-danger bttn-block">Submit</button>
 								</form>
@@ -227,7 +249,7 @@
 		</div>
 </div>
 
- <!--================ GOOGLE MAP =================-->
+<!--================ GOOGLE MAP =================-->
 
 <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.889518499371!2d121.05235931484017!3d14.605368989799423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7ddd96105b1%3A0x24585ff686b90c9c!2sRichbelt+Tower!5e0!3m2!1sen!2sph!4v1560511229059!5m2!1sen!2sph" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
 
@@ -257,8 +279,8 @@
 					</section>
 				</div>
 				<div class="copyright">
-					<h2>&copy;All Rights Reserved. Create by Zarata Creatives 2019</h2>
-					<h2>DC Group Of Companies</h2>
+					<h2>&copy;eveloped by Zarata Creatives 2019</h2>
+					<h2>All Rights Reserved, DC Group Of Companies</h2>
 				</div>
 			</div>
 	</footer>

@@ -15,3 +15,6 @@
 // });
 
 Route::get('/', 'PagesController@index')->name('homepage');
+
+Route::post('/send', 'MailController@send')->name('send');
+// Route::get('/email', 'MailController@email');
