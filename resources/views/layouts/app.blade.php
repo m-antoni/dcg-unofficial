@@ -27,16 +27,13 @@
     <link href="{{ asset('/css/owl.theme.default.css') }}" rel="stylesheet">
     <link href="{{ asset('/css/main.css') }}" rel="stylesheet">
 </head>
-<body>
-  <div id="app" >
+<body @if(Request::is('payment')) class="bg-dark" @endif>
+  <div id="app">
       @include('partials.navbar')
           
       @yield('content')
-
-      <!--  backtotop   -->
-      @include('partials.modals')
-
-      <!--  backtotop   -->
+      
+      <!-- backtotop -->
       <a href="#0" class="cd-top js-cd-top">Top</a>
 
   </div><!-- app -->   

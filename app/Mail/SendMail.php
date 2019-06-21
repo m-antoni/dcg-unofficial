@@ -33,20 +33,15 @@ class SendMail extends Mailable
     // }
     public function build(request $request)
     {
-        // return $this->view('mail',[
-        //     'msg' => $request->message
-        // ])->to($request->to);
-
         // return dd($this->view('mail'));
-                
-        return $this->view('mail',[
-                            'name' => $request->name,
-                            'msg' => $request->message, 
-                            'email' => $request->email
-                        ])->to('michaelantoni89@gmail.com')->from($request->email)
-                          ->subject('DC Group Contact Form');
+        // return dd($request->all());
 
-                      
-                         
+        return $this->view('mail',['name' => $request->name, 'message' => $request->message, 'email' => $request->email])
+                            ->to('michaelantoni89@gmail.com')->from(['address' => $request->email])
+                            ->subject('DC Group Contact Form');
     }
 }
+
+// return $this->view('mail',[
+//     'msg' => $request->message
+// ])->to($request->to);

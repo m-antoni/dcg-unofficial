@@ -1,3 +1,4 @@
+@if(Request::is('/'))
 <header>
    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
    		<div class="container-fluid">
@@ -25,7 +26,7 @@
 											<a class="nav-link" href="#feed">Feed</a>	
 									</li>
 									<li class="nav-item">
-											<a class="nav-link payment" href="#">Payment</a>	
+											<a class="nav-link" href="{{ route('payment') }}">Payment</a>	
 									</li>
 									<li class="nav-item">
 											<a class="nav-link" href="#contact">Contact</a>	
@@ -35,4 +36,4 @@
    		</div>
 		</nav>
 </header>
-
+@endif

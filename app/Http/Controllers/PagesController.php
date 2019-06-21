@@ -12,4 +12,9 @@ class PagesController extends Controller
     		return view('pages.index', compact('clients'));
     }
 
+    public function payment()
+    {
+    		return view('pages.payment');
+    }
+
 }

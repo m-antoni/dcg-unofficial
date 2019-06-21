@@ -52,6 +52,7 @@
 
 
 <!--================ BLOCKQUOTE =================-->
+
 <div id="quote">
 		<div class="container">
 				<div class="row justify-content-center">
@@ -180,12 +181,11 @@
 		<h1 class="wow fadeInLeft">Beneficiary Organizations</h1>
 		<div class="owl-carousel owl-beneficiary owl-theme">
 				@for($b = 1; $b <= 6; $b++)
-						<div><img src="/img/beneficiary/{{ $b }}.jpg" alt="{{$b}}.image"></div>
+						<div><img src="/img/beneficiary/{{ $b }}.jpg" alt="{{ $b }}.image"></div>
 				@endfor
 		</div>
 	</div>
 </div>
-
 
  <!--================ CLIENTS =================-->
 
@@ -204,19 +204,28 @@
 
 <!--================ FEED =================-->
 
-<div class="feed">
+<div id="feed">
 		<div class="container">
-				<h1>Where New Ideas Come From - by Jay Shetty</h1>
-				<div id="videoembed">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/Bs7R7FX4aYw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>		
+				<div class="row">
+						<div class="col-md-6">
+								<h1 class="wow fadeInLeft">Where New Ideas Come From</h1>
+								<p>- by Jay Shetty</p>
+								<div id="videoembed" class="wow fadeInUp">
+										<iframe width="100%" height="315" src="https://www.youtube.com/embed/Bs7R7FX4aYw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>		
+						</div>
+
+						<div class="col-md-6">
+								<h2 class="wow fadeInRight">
+										“Starve your <br>
+										distractions, <br>
+										feed your <br>
+										focus.”
+								</h2>
+						</div>
+				</div>
 		</div>
 </div>
-
-
-
-
-
 
 
 <!--================ CONTACT US =================-->
@@ -253,36 +262,38 @@
 
 <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.889518499371!2d121.05235931484017!3d14.605368989799423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7ddd96105b1%3A0x24585ff686b90c9c!2sRichbelt+Tower!5e0!3m2!1sen!2sph!4v1560511229059!5m2!1sen!2sph" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-	<!-- Footer -->
-	<footer id="footer">
-			<div class="inner">
-				<div class="content container">
-					<section>
-						<h4><i class="fa fa-building"></i> DC Group of Companies</h4>
-						<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis reiciendis facilis culpa necessitatibus deserunt eos incidunt ducimus, nemo tempore optio quis laborum repellendus debitis sed eligendi autem beatae sapiente corrupti.</p>
-					</section>
-					<section>
-						<h4><i class="fa fa-envelope"></i> Contact Us</h4>
-						<ul class="alt">
-							<li>GF Richbelt Terraces Annapolis Greenhills San Juan, Philippines</li>
-							<li>(02) 734-3340 | 09667605414</li>
-							<li>info@dcgroup.ph</li>
-						</ul>
-					</section>
-					<section>
-						<h4><i class="fa fa-hand-o-right"></i> Social Media</h4>
-						<ul class="plain">
-							<li><a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter">&nbsp;</i>Twitter</a></li>
-							<li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook">&nbsp;</i>Facebook</a></li>
-							<li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram">&nbsp;</i>Instagram</a></li>
-						</ul>
-					</section>
-				</div>
-				<div class="copyright">
-					<h2>&copy;eveloped by Zarata Creatives 2019</h2>
-					<h2>All Rights Reserved, DC Group Of Companies</h2>
-				</div>
+<!-- Footer -->
+<footer id="footer">
+		<div class="inner">
+			<div class="content container">
+				<section>
+					<h4><i class="fa fa-building"></i> DC Group of Companies</h4>
+					<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis reiciendis facilis culpa necessitatibus deserunt eos incidunt ducimus, nemo tempore optio quis laborum repellendus debitis sed eligendi autem beatae sapiente corrupti.</p>
+				</section>
+				<section>
+					<h4><i class="fa fa-envelope"></i> Contact Us</h4>
+					<ul class="alt">
+						<li>GF Richbelt Terraces Annapolis Greenhills San Juan, Philippines</li>
+						<li>(02) 734-3340 | 09667605414</li>
+						<li>info@dcgroup.ph</li>
+					</ul>
+				</section>
+				<section>
+					<h4><i class="fa fa-hand-o-right"></i> Social Media</h4>
+					<ul class="plain">
+						<li><a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter">&nbsp;</i>Twitter</a></li>
+						<li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook">&nbsp;</i>Facebook</a></li>
+						<li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram">&nbsp;</i>Instagram</a></li>
+					</ul>
+				</section>
 			</div>
-	</footer>
+			<div class="copyright">
+				<h2>&copy; Developed by Zarata Creatives 2019</h2>
+				<h2>All Rights Reserved, DC Group Of Companies</h2>
+			</div>
+		</div>
+</footer>
+	
+@include('partials.modals')
 
 @endsection
