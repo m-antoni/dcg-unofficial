@@ -1,7 +1,6 @@
 
 {{-- AGRICULTURE  --}}
 <div id="agri" data-iziModal-title="Agriculture" 
-        data-iziModal-subTitle="Corporate Members, Subsidiaries & Affiliate - Holdings" 
         data-iziModal-icon="icon-home"
         data-izimodal-transitionin="bounceInDown"
         data-izimodal-transitionout="bounceOutUp">
@@ -19,8 +18,7 @@
 </div><!--iziModal -->
 
 {{-- CORPORATE & LEGAL SERVICES  --}}
-<div id="legal" data-iziModal-title="Corporate and Legal Services" 
-        data-iziModal-subTitle="Corporate Members, Subsidiaries & Affiliate - Holdings" 
+<div id="legal" data-iziModal-title="Corporate and Legal Services"  
         data-iziModal-icon="icon-home"
         data-izimodal-transitionin="bounceInDown"
         data-izimodal-transitionout="bounceOutUp">
@@ -39,8 +37,7 @@
 
 
 {{-- FOODS  --}}
-<div id="food" data-iziModal-title="Food and Beferage" 
-        data-iziModal-subTitle="Corporate Members, Subsidiaries & Affiliate - Holdings" 
+<div id="food" data-iziModal-title="Food and Beferage"
         data-iziModal-icon="icon-home"
         data-izimodal-transitionin="bounceInDown"
         data-izimodal-transitionout="bounceOutUp">
@@ -60,7 +57,6 @@
 
 {{-- LEISURE --}}
 <div id="leisure" data-iziModal-title="Leisure and Hospitality" 
-        data-iziModal-subTitle="Corporate Members, Subsidiaries & Affiliate - Holdings" 
         data-iziModal-icon="icon-home"
         data-izimodal-transitionin="bounceInDown"
         data-izimodal-transitionout="bounceOutUp">
@@ -80,7 +76,6 @@
 
 {{-- HEALTHCARE --}}
 <div id="health" data-iziModal-title="Healthcare" 
-        data-iziModal-subTitle="Corporate Members, Subsidiaries & Affiliate - Holdings" 
         data-iziModal-icon="icon-home"
         data-izimodal-transitionin="bounceInDown"
         data-izimodal-transitionout="bounceOutUp">
@@ -99,8 +94,7 @@
 
 
 {{-- IT --}}
-<div id="it" data-iziModal-title="Multimedia and Information Technology" 
-        data-iziModal-subTitle="Corporate Members, Subsidiaries & Affiliate - Holdings" 
+<div id="it" data-iziModal-title="Multimedia and Information Technology"
         data-iziModal-icon="icon-home"
         data-izimodal-transitionin="bounceInDown"
         data-izimodal-transitionout="bounceOutUp">
@@ -120,7 +114,6 @@
 
 {{-- Print --}}
 <div id="print" data-iziModal-title="Printing and Publishing" 
-        data-iziModal-subTitle="Corporate Members, Subsidiaries & Affiliate - Holdings" 
         data-iziModal-icon="icon-home"
         data-izimodal-transitionin="bounceInDown"
         data-izimodal-transitionout="bounceOutUp">
@@ -140,7 +133,6 @@
 
 {{-- Real Estate and Utilities --}}
 <div id="real" data-iziModal-title="Real Estate and Utilities" 
-        data-iziModal-subTitle="Corporate Members, Subsidiaries & Affiliate - Holdings" 
         data-iziModal-icon="icon-home"
         data-izimodal-transitionin="bounceInDown"
         data-izimodal-transitionout="bounceOutUp">
@@ -160,7 +152,6 @@
 
 {{-- Trading and Distribution --}}
 <div id="trading" data-iziModal-title="Trading and Distribution" 
-        data-iziModal-subTitle="Corporate Members, Subsidiaries & Affiliate - Holdings" 
         data-iziModal-icon="icon-home"
         data-izimodal-transitionin="bounceInDown"
         data-izimodal-transitionout="bounceOutUp">
@@ -179,7 +170,6 @@
 
 {{-- Venture Capital --}}
 <div id="venture" data-iziModal-title="Venture and Capital" 
-        data-iziModal-subTitle="Corporate Members, Subsidiaries & Affiliate - Holdings" 
         data-iziModal-icon="icon-home"
         data-izimodal-transitionin="bounceInDown"
         data-izimodal-transitionout="bounceOutUp">

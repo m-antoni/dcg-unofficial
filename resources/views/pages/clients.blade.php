@@ -6,7 +6,7 @@
 
 <div id="clients">
 	<div class="parallaxClients">
-			<div class="caption">
+			<div class="caption wow zoomIn">
 					<span class="border">OUR CLIENTS</span>
 			</div>
 	</div>		

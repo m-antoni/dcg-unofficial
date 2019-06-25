@@ -6,7 +6,7 @@
 <div id="about">
 
 	<div class="parallax00">
-			<div class="caption">
+			<div class="caption wow zoomIn">
 					<span class="border">WHAT WE DO</span>
 			</div>
 	</div>		
@@ -22,7 +22,7 @@
 	</div>
 	
 	<div class="parallax01">
-			<div class="caption">
+			<div class="caption wow zoomIn">
 					<span class="border">HOW WE STARTED</span>
 			</div>
 	</div>						
@@ -38,7 +38,7 @@
 	</div>
 		
 	<div class="parallax02">
-			<div class="caption">
+			<div class="caption wow zoomIn">
 					<span class="border">WHO WE ARE</span>
 			</div>
 	</div>	
@@ -54,7 +54,7 @@
 	</div>
 	
 	<div class="parallax03">
-			<div class="caption">
+			<div class="caption wow zoomIn">
 				<span class="border">OUR GOAL</span>
 			</div>
 	</div>	

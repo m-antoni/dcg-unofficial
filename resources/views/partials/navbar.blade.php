@@ -1,5 +1,5 @@
 <header>
-   <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+  	<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
    		<div class="container">
 	   				<a id="logo" class="navbar-brand" href="/">
 	   					<img id="logoImage" src="{{ asset('img/logo.png') }}" alt="logo">
@@ -10,7 +10,7 @@
 				  <div class="collapse navbar-collapse" id="navbarToggler">
 			  			<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
 					      	<li class="nav-item">
-					      		<a class="nav-link" href="{{ route('homepage') }}">Home</a>
+					      		<a class="nav-link home" href="{{ route('homepage') }}">Home</a>
 						      </li>
 						      <li class="nav-item">
 						       		<a class="nav-link" href="{{ route('about') }}">About</a>

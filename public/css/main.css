@@ -8,10 +8,9 @@
 header{
   margin-bottom: 80px;
 }
-
 #navbar {
   overflow: hidden;
-  background-color: #000;
+  /*background-color: white;*/
   padding: 10px; /* Large padding which will shrink on scroll (using JS) */
   transition: 0.4s; /* Adds a transition effect when the padding is decreased */
   position: fixed; /* Sticky/fixed navbar */
@@ -20,6 +19,7 @@ header{
   z-index: 99;
   border-bottom: 3px solid #b6d331;
 }
+
 
 /* Style the navbar links */
 #navbar a {
@@ -34,25 +34,28 @@ header{
 /*  line-height: 25px;*/
 }
 
+#navbar .home{
+  /*color: #2A8C8F;*/
+  font-weight: 600;
+}
+
 /* Style the logo */
 #navbar .navbar-brand img{
   width: 50px;
 }
-
 #navbar #logo {
   font-size: 1.4rem;
   font-weight: bold;
   color: white;
   transition: 0.4s;
 }
-
 #navbar a{
   font-size: .9rem;
-  color: white;
+  color: #909090;
 }
 /* Links on mouse-over */
 #navbar a:hover {
-  color: grey;
+  color: #b6d331;
   font-weight: 600;
 }
 
@@ -141,9 +144,8 @@ body{
   font-size: 4.6rem;
   margin-bottom: 0;
   padding-bottom: .4rem;
-  font-weight: 600;
-  letter-spacing: 5px;
-
+  /*font-weight: 600;*/
+ /* letter-spacing: 5px;*/
 }
 
 .header-content p{
@@ -287,12 +289,29 @@ body{
   /*background: url('../img/about/02.jpg') no-repeat;*/
   background-size: cover;
   font-family: 'Poppins', sans-serif;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
   padding-bottom: 50px;
-}`
+}
 
-#corporate .sec01{
-  margin-top: 100px;
+#corporate .carousel-item {
+  opacity: 0.85;
+  height: 65vh;
+  min-height: 500px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#corporate .carousel-item h3{
+  font-family: 'Poppins', sans-serif;
+/*  background-color: rgba(0, 0, 0,0.9);*/
+  color: black;
+  font-weight:  600;
+/*  padding: 10px 10px 10px 10px;*/
+  font-size: 2.5rem;
+  border: 0 !important;
 }
 
 #corporate .corporateTitle h1{
@@ -304,50 +323,19 @@ body{
 
 #corporate .corporate-content ul li{
   list-style: none;
+  text-align: center;
 }
+
 #corporate .corporate-content ul li a{
    color: black;
-   font-size: 1.2rem;
+   font-size: 1.5rem;
 }
 
 #corporate .corporate-content ul li a:hover{
-  color: #3789BA;
+  color: #ff5964;
   font-weight: 600;
   text-decoration: none;
 }
-
-#corporate .parallaxCorporate { 
-  /* The image used */
-  background: url("../img/corporate.jpg") no-repeat;
-  /* Set a specific height */
-  height: 400px; 
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  opacity: 0.80;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#corporate .caption{
-  position: relative;
-  left: 0;
-  top: 40%;
-  text-align: center;
-  color: #000;
-}
-
-#corporate .caption span.border{
-  font-family: 'Poppins', sans-serif;
-  background-color: rgba(0, 0, 0,0.9);
-  color: white;
-  font-weight:  600;
-  padding: 10px;
-  font-size: 2.5rem;
-  letter-spacing: 5px;
-  border: 0 !important;
-}
-
 
 /* BENEFICIARY SECTION */
 #beneficiary{
@@ -357,7 +345,7 @@ body{
   text-align: center;
 }
 #beneficiary h1{
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   color: #909090;
 }
 
@@ -434,32 +422,86 @@ body{
 
 /* FEED SECTION */
 #feed{
-  background-color: #333;
   font-family: 'Poppins', sans-serif;
   color: white;
-  padding-top: 100px;
-  padding-bottom: 150px;
-  margin-top: 100px;
+  padding-bottom: 100px;
+  margin-top: 120px;
 }
 
-#feed h1{
-  color: #b6d331;
+#feed .sec01{
+  margin-bottom: 50px;
 }
 
-#feed h2{
+#feed .sec01 h1{
+  color: #909090;
+}
+
+#feed .sec01 h2{
   margin-left: 30px;
   font-size: 3rem;
-  line-height: 4rem;
   color: #ff5964;
   text-align: center;
   padding-top: 100px;
   padding-bottom: 20px;
 }
 
-#feed ol li{
-  line-height: 2rem;
-  font-size: 1rem;
+#feed .sec01 p {
+  color: #333;
 }
+
+#feed .sec02{
+  margin-top: 40px;
+  color: #333;
+} 
+
+#feed .sec02 h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  color: #3789BA;
+}
+
+#feed .sec02 ol li{
+  font-size: 1.2rem;
+/*  color: #909090;*/
+}
+
+#feed .sec02 p a{
+  font-weight: 600;
+  color: #ff5964;
+}
+
+#feed .parallaxFeed { 
+  /* The image used */
+  background: url("../img/feed.jpg") no-repeat;
+  /* Set a specific height */
+  height: 400px; 
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  opacity: 0.80;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#feed .caption{
+  position: relative;
+  left: 0;
+  top: 40%;
+  text-align: center;
+  color: #000;
+}
+
+#feed .caption span.border{
+  font-family: 'Poppins', sans-serif;
+  background-color: rgba(0, 0, 0,0.9);
+  color: white;
+  font-weight:  600;
+  padding: 10px;
+  font-size: 2.5rem;
+  letter-spacing: 5px;
+  border: 0 !important;
+}
+
 
 /* CONTACT SECTION */
 #contact{

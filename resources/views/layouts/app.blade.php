@@ -17,7 +17,7 @@
     <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
     <!-- poppins font -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:200&display=swap" rel="stylesheet">
-     <!-- libraries -->
+    <!-- libraries -->
     <link href="{{ asset('/css/font-awesome.min.css') }}" rel="stylesheet">
     <link href="{{ asset('/css/animate.min.css') }}" rel="stylesheet">
     <link href="{{ asset('/css/bttn.min.css') }}" rel="stylesheet">
@@ -28,7 +28,7 @@
     <link href="{{ asset('/css/main.css') }}" rel="stylesheet">
 </head>
 <body>
-
+  
   <div id="app">
       <!-- navigation bar -->
       @include('partials.navbar')
