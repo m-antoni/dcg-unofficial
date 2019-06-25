@@ -15,7 +15,13 @@
 // });
 
 Route::get('/', 'PagesController@index')->name('homepage');
+Route::get('about', 'PagesController@about')->name('about');
+Route::get('corporate', 'PagesController@corporate')->name('corporate');
+Route::get('clients', 'PagesController@clients')->name('clients');
+Route::get('feed', 'PagesController@feed')->name('feed');
 Route::get('payment', 'PagesController@payment')->name('payment');
+Route::get('contact', 'PagesController@contact')->name('contact');
 
-Route::post('/send', 'MailController@send')->name('send');
+// Send an email using smtp
+Route::post('send', 'MailController@send')->name('send');
 // Route::get('/email', 'MailController@email');

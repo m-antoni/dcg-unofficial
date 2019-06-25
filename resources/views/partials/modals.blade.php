@@ -1,28 +1,3 @@
-{{-- MODAL CONTENT --}}
-<!--iziModal for HOMEPAGE-->
-<div id="triggerHome" data-iziModal-title="DC Group of Companies" 
-        data-iziModal-subTitle="About" 
-        data-iziModal-icon="icon-home"
-        data-izimodal-transitionin="bounceInDown"
-        data-izimodal-transitionout="bounceOutUp">
-    <div class="modal-inside">
-        <div class="container">
-            <div class="row">
-                <div id="homeModal" class="col-md-12 py-3">
-    				<h4>DC Group of Companies </h4>
-    				<p class="text-justify">
-    						 is an international investment banking conglomerate headquartered in Singapore and, is primarily in the business of venture capital, mergers & acquisitions by means of internally generated private equity, assets & holdings.
-    				</p>
-    				<h4>What We Do</h4> 
-    				<p class="text-justify">
-    						The DC Group, with the mission of building lives by innovating and establishing its foothold in various industries and emerging markets, aids its clients, primarily, by providing efficient, effective and quality products, services and solutions to essential problems, matters and difficulties that affect lives, organizations and communities, as a whole, thru our diversified corporate members, subsidiaries and affiliate-holdings.
-    				</p>		
-                </div>
-            </div>
-        </div>
-    </div>
-</div><!--iziModal -->
-
 
 {{-- AGRICULTURE  --}}
 <div id="agri" data-iziModal-title="Agriculture" 
@@ -104,7 +79,7 @@
 
 
 {{-- HEALTHCARE --}}
-<div id="health" data-iziModal-title="Health" 
+<div id="health" data-iziModal-title="Healthcare" 
         data-iziModal-subTitle="Corporate Members, Subsidiaries & Affiliate - Holdings" 
         data-iziModal-icon="icon-home"
         data-izimodal-transitionin="bounceInDown"
@@ -203,7 +178,7 @@
 </div><!--iziModal -->
 
 {{-- Venture Capital --}}
-<div id="venture" data-iziModal-title="Trading and Distribution" 
+<div id="venture" data-iziModal-title="Venture and Capital" 
         data-iziModal-subTitle="Corporate Members, Subsidiaries & Affiliate - Holdings" 
         data-iziModal-icon="icon-home"
         data-izimodal-transitionin="bounceInDown"

@@ -6,12 +6,12 @@
 
 /* Create a sticky/fixed navbar */
 header{
-  margin-bottom: 90px;
+  margin-bottom: 80px;
 }
 
 #navbar {
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: #000;
   padding: 10px; /* Large padding which will shrink on scroll (using JS) */
   transition: 0.4s; /* Adds a transition effect when the padding is decreased */
   position: fixed; /* Sticky/fixed navbar */
@@ -42,12 +42,13 @@ header{
 #navbar #logo {
   font-size: 1.4rem;
   font-weight: bold;
-  color: #909090;
+  color: white;
   transition: 0.4s;
 }
 
 #navbar a{
   font-size: .9rem;
+  color: white;
 }
 /* Links on mouse-over */
 #navbar a:hover {
@@ -76,8 +77,8 @@ header{
 }
 
 /* VIDEO BACKGROUND ON LANDING PAGE */
-/* GLOBAL SETTING */
 *{
+    /* GLOBAL SETTING */
     box-sizing: border-box;
 }
 
@@ -90,11 +91,12 @@ body{
   overflow-x: hidden;
 }
 .v-header{
-  height: 100vh;
+/*  height: 80vh;*/
   display: flex;
   align-items: center;
   color: #fff;
 }
+
 .video-container{
   max-width: 960px;
   padding-left: 1rem;
@@ -139,7 +141,9 @@ body{
   font-size: 4.6rem;
   margin-bottom: 0;
   padding-bottom: .4rem;
-  font-weight: 300;
+  font-weight: 600;
+  letter-spacing: 5px;
+
 }
 
 .header-content p{
@@ -158,24 +162,103 @@ body{
 
 /* ABOUT US */
 #about{
-  margin-bottom: 100px;
+  margin-top: 80px;
+  margin-bottom: 50px;
 }
 
 #about .text-justify{
   font-size: 1.2rem;
-  color: #909090;
+  color: #333;
 }
 
 #about h4{
   font-family: 'Poppins', sans-serif;
-  font-size: 1.6rem;
-  color: #ff5964;
+  font-size: 1.4rem;
+  color: #28333D;
   font-weight: 600;
 }
 
-#about .image1{
-    width: 100px;
-    text-align: center;
+#about .sec01, #about .sec02, #about .sec03, #about .sec04{
+  margin-top: 30px;
+  margin-bottom: 30px;
+} 
+
+/* ABOUT US  PARALLAX*/
+#about .parallax00 { 
+  /* The image used */
+  background: url("../img/about/00.jpg") no-repeat;
+
+  /* Set a specific height */
+  height: 400px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  opacity: 0.80;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#about .parallax01 { 
+  /* The image used */
+  background: url("../img/about/02.jpg") no-repeat;
+
+  /* Set a specific height */
+  height: 400px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  opacity: 0.80;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#about .parallax02 { 
+  /* The image used */
+  background: url("../img/about/01.jpg") no-repeat;
+
+  /* Set a specific height */
+  height: 400px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  opacity: 0.80;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#about .parallax03 { 
+  /* The image used */
+  background: url("../img/about/03.jpg") no-repeat;
+  /* Set a specific height */
+  height: 400px; 
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  opacity: 0.80;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#about .caption{
+  position: relative;
+  left: 0;
+  top: 40%;
+  text-align: center;
+  color: #000;
+}
+
+#about .caption span.border{
+  font-family: 'Poppins', sans-serif;
+  background-color: rgba(0, 0, 0,0.9);
+  color: white;
+  font-weight:  600;
+  padding: 10px;
+  font-size: 2.5rem;
+  letter-spacing: 5px;
+  border: 0 !important;
 }
 
 /*  QUOTE */
@@ -197,36 +280,74 @@ body{
   font-weight: 500;
 }
 
-
 /* CORPORATE SECTION */
 #corporate{
-  padding-top: 100px;
-  padding-bottom: 100px;
-  /*background-color: #2E8171;*/
-  background-color: #1F4A5C;
+  margin-top: 80px;
+  /*background-color: #37474F;*/
+  /*background: url('../img/about/02.jpg') no-repeat;*/
+  background-size: cover;
   font-family: 'Poppins', sans-serif;
-  text-align: center;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
+  padding-bottom: 50px;
+}`
+
+#corporate .sec01{
+  margin-top: 100px;
 }
 
-.corporateTitle{
-  margin-bottom: 20px;
-}
-
-.corporateTitle h1{
+#corporate .corporateTitle h1{
+  padding-top: 50px;
+  margin-bottom: 30px;
   font-size: 2.3rem;
-  color: #b6d331;
+  color: #3789BA;
 }
 
-.corporateTitle p{
-  font-size: 1.8rem;
-  /*color: #909090;*/
-  color: #ffff;
+#corporate .corporate-content ul li{
+  list-style: none;
+}
+#corporate .corporate-content ul li a{
+   color: black;
+   font-size: 1.2rem;
 }
 
- #corporate h4{
-    font-size: 1.3rem;
- }
+#corporate .corporate-content ul li a:hover{
+  color: #3789BA;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#corporate .parallaxCorporate { 
+  /* The image used */
+  background: url("../img/corporate.jpg") no-repeat;
+  /* Set a specific height */
+  height: 400px; 
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  opacity: 0.80;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#corporate .caption{
+  position: relative;
+  left: 0;
+  top: 40%;
+  text-align: center;
+  color: #000;
+}
+
+#corporate .caption span.border{
+  font-family: 'Poppins', sans-serif;
+  background-color: rgba(0, 0, 0,0.9);
+  color: white;
+  font-weight:  600;
+  padding: 10px;
+  font-size: 2.5rem;
+  letter-spacing: 5px;
+  border: 0 !important;
+}
+
 
 /* BENEFICIARY SECTION */
 #beneficiary{
@@ -237,27 +358,79 @@ body{
 }
 #beneficiary h1{
   margin-bottom: 20px;
+  color: #909090;
 }
-
 
 /* CLIENT SECTION */
-#our_clients{
-  margin-bottom: 150px;
+#clients{
+  margin-top: 75px;
+  margin-bottom: 100px;
 }
 
-#our_clients h1{
+#clients .sec01{
+  margin-top: 100px;
+}
+
+#clients .sec01 h1{
   font-family: 'Poppins', sans-serif;
   font-size: 3rem;
   text-align: center;
 }
 
-#our_clients p{
+#clients .sec01 p{
   font-family: 'Poppins', sans-serif;
   font-size: 1.8rem;
   color: #909090;
   text-align: center;
 }
 
+#clients .sec02{
+  margin-top: 100px;
+}
+
+#clients .sec02 h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+}
+
+#clients .sec02 p{
+  font-size: 1.2rem;
+  color: #909090;
+  text-align: justify;
+}
+
+
+#clients .parallaxClients { 
+  /* The image used */
+  background: url("../img/clients.jpg") no-repeat;
+  /* Set a specific height */
+  height: 400px; 
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  opacity: 0.80;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#clients .caption{
+  position: relative;
+  left: 0;
+  top: 40%;
+  text-align: center;
+  color: #000;
+}
+
+#clients .caption span.border{
+  font-family: 'Poppins', sans-serif;
+  background-color: rgba(0, 0, 0,0.9);
+  color: white;
+  font-weight:  600;
+  padding: 10px;
+  font-size: 2.5rem;
+  letter-spacing: 5px;
+  border: 0 !important;
+}
 
 /* FEED SECTION */
 #feed{
@@ -294,99 +467,53 @@ body{
   background-size: cover;
   padding: 30px 0 70px 0;
   color: #ffff;
-  border-top: 3px solid #b6d331;
   border-bottom: 3px solid #b6d331;
 }
 
 #contact h1{
   font-family: 'Poppins', sans-serif;
-  font-size: 3rem;
-  color: #b6d331;
+  font-size: 2rem;
+  color: white;
   margin-bottom: 10px;
 }
 
-#contact .form-control{
-  border: 2px solid #909090;
+#contact label {
+  font-size: 1.2rem;
+  color: #b6d331;
 }
 
-/*back to top styles*/
-.cd-top {
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  position: fixed;
-  bottom: 40px;
-  right: 10px;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-  /* image replacement properties */
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
-  background: rgba(232, 98, 86, 0.8) url(../img/cd-top-arrow.svg) no-repeat center 50%;
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: opacity .3s 0s, visibility 0s .3s, background-color .3s 0s;
-  transition: opacity .3s 0s, visibility 0s .3s, background-color .3s 0s;
-}
-
-.cd-top.cd-top--show,
-.cd-top.cd-top--fade-out,
-.cd-top:hover {
-  -webkit-transition: opacity .3s 0s, visibility 0s 0s, background-color .3s 0s;
-  transition: opacity .3s 0s, visibility 0s 0s, background-color .3s 0s;
-}
-
-.cd-top.cd-top--show {
-  /* the button becomes visible */
-  visibility: visible;
-  opacity: 1;
-}
-
-.cd-top.cd-top--fade-out {
-  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
-  opacity: .5;
-}
-
-.cd-top:hover {
-  background-color: #e86256;
-  opacity: 1;
-}
-
-@media only screen and (min-width: 768px) {
-  .cd-top {
-    right: 20px;
-    bottom: 20px;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .cd-top {
-    height: 60px;
-    width: 60px;
-    right: 30px;
-    bottom: 30px;
-  }
+#contact input, #contact textarea{
+  font-size: 1.2rem;
+  border-radius: 0 !important;
 }
 
 
 /* PAYMENT SECTION */
-.payment h1{
+#payment {
+  background: url('../img/payment.jpg') no-repeat;
+  background-size: cover;
+  padding-top: 30px;
+  padding-bottom: 300px;
+  height: 100%;
+}
+
+#payment h1{
   font-family: 'Poppins', sans-serif;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-size: 2rem;
   color: white;
 }
 
-.payment label {
+#payment label {
   font-size: 1.2rem;
   color: #b6d331;
 }
 
-.payment input, .payment textarea, .payment select{
+#payment input, #payment select{
   font-size: 1.2rem;
-  font-weight: 600;
+  border-radius: 0 !important;
 }
+
 
 
 /* Footer */
