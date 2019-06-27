@@ -3,6 +3,8 @@
    		<div class="container">
 	   				<a id="logo" class="navbar-brand" href="/">
 	   					<img id="logoImage" src="{{ asset('img/logo.png') }}" alt="logo">
+	   					DC Group Of Companies
+
 	   				</a>
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler">
 				    <span class="navbar-toggler-icon"></span>
@@ -22,7 +24,7 @@
 											<a class="nav-link" href="{{ route('clients') }}">Clients</a>	
 						      </li>
 						      <li class="nav-item">
-											<a class="nav-link" href="{{ route('feed') }}">Feed</a>	
+											<a class="nav-link" href="{{ route('feed') }}">Feeds</a>	
 									</li>
 									<li class="nav-item">
 											<a class="nav-link" href="{{ route('payment') }}">Payment</a>	

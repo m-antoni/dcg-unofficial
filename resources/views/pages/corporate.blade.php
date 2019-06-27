@@ -14,18 +14,22 @@
 	    <div class="carousel-inner" role="listbox">
 	      <div class="carousel-item active" style="background-image: url('../img/corporate/1.jpg')">
 	        <div class="carousel-caption d-none d-md-block">
+	        	<h1>Venture & Capital</h1>
 	        </div>
 	      </div>
 	       <div class="carousel-item" style="background-image: url('../img/corporate/2.jpg')">
 	        <div class="carousel-caption d-none d-md-block">
+	        	<h1>Corporate & Legal Services</h1>
 	        </div>
 	      </div>
 	       <div class="carousel-item" style="background-image: url('../img/corporate/3.jpg')">
 	        <div class="carousel-caption d-none d-md-block">
+							<h1>Multimedia and IT</h1>
 	        </div>
 	      </div>
 	       <div class="carousel-item" style="background-image: url('../img/corporate/4.jpg')">
 	        <div class="carousel-caption d-none d-md-block">
+	        	<h1>Trading & Distribution</h1>
 	        </div>
 	      </div>
 	    </div> <!-- inner -->
@@ -56,7 +60,7 @@
 
 	<div class="container sec01">
 			<div class="corporateTitle">
-				<h1 class="wow fadeInDown" align="center">Corporate Members, <br> Subsidiaries& Affiliate - Holdings </h1>
+				<h1 class="wow zoomIn" align="center">Corporate Members, <br> Subsidiaries& Affiliate - Holdings </h1>
 			</div>
 			<div class="row justify-content-center">
 					<div class="col-md-6">

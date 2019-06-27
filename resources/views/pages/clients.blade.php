@@ -19,6 +19,7 @@
 												<div><img src="/img/clients/{{ $i }}.jpg" alt="{{$i}}.image"></div>
 										@endfor
 								</div>
+								<p>Allow us to have yours!</p>
 					</div>
 					<div class="col-md-12 sec02">
 							<h1><i class="fa fa-bookmark"></i> Lorem Ipsum</h1>

@@ -13,11 +13,13 @@
          // style when scroll down
          document.getElementById("navbar").style.padding = "3px 3px";
          document.getElementById("logo").style.fontSize = "1rem";
+         document.getElementById("logo").style.color = "#909090";
          document.getElementById("logoImage").style.width = "45px";
          document.getElementById("navbar").style.backgroundColor = "#070108";
       } else {
         // default style
         document.getElementById("navbar").style.padding = "10px 10px";
+        document.getElementById("logo").style.color = "#909090";
         document.getElementById("logo").style.fontSize = "1.4rem";
         document.getElementById("logoImage").style.width = "50px";
         document.getElementById("navbar").style.backgroundColor = "white";

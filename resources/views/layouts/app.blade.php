@@ -22,7 +22,7 @@
     <link href="{{ asset('/css/animate.min.css') }}" rel="stylesheet">
     <link href="{{ asset('/css/bttn.min.css') }}" rel="stylesheet">
     <link href="{{ asset('/css/iziModal.min.css') }}" rel="stylesheet">
-     <link href="{{ asset('/css/imagehover.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('/css/imagehover.min.css') }}" rel="stylesheet">
     <link href="{{ asset('/css/owl.carousel.min.css') }}" rel="stylesheet">
     <link href="{{ asset('/css/owl.theme.default.css') }}" rel="stylesheet">
     <link href="{{ asset('/css/main.css') }}" rel="stylesheet">
@@ -51,5 +51,6 @@
   <script src="{{ asset('/js/navbar-fixed.js') }}"></script>
    <!-- script custom -->
   <script src="{{ asset('/js/script.js') }}"></script>
+  
 </body>
 </html>

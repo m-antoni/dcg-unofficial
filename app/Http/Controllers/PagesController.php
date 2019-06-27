@@ -32,13 +32,13 @@ class PagesController extends Controller
     		return view('pages.feed');
     }
 
-    public function payment()
-    {
-    		return view('pages.payment');
-    }
+    // public function payment()
+    // {
+    // 		return view('pages.payment');
+    // }
 
     public function contact()
     {
-    		return view('pages.contact');
+    	return view('pages.contact');
     }
 }

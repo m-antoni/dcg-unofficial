@@ -5,9 +5,9 @@
 		<div class="inner">
 			<div class="content container">
 				<section>
-					<h4><i class="fa fa-building"></i> DC Group of Companies</h4>
+					<h4><i class="fa fa-building"></i> Profile</h4>
 					<p class="text-justify">
-						is an international investment banking conglomerate headquartered in Singapore and, is primarily in the business of venture capital, mergers & acquisitions by means of internally generated private equity, assets & holdings.
+						DC Group of Companies is an international investment banking conglomerate headquartered in Singapore and, is primarily in the business of venture capital, mergers & acquisitions by means of internally generated private equity, assets & holdings.
 					</p>
 				</section>
 				<section>
